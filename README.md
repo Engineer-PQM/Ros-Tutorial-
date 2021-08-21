@@ -4,7 +4,7 @@ Done Move at directory Poin include file Cpp and Py include
 - Base_Move (....)
 - Move.py and Move.cpp Advanced of file Base_move
 - Move_ip(x and y coordinates entered from the keyboard)
-- Move_with_case ()
+- Move_with_case (use case replace input )
 
 parameter storage position 
 

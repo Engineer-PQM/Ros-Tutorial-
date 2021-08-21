@@ -2,7 +2,7 @@
 # license removed for brevity
 
 import rospy
-import Modul
+import Dictionary
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 

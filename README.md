@@ -12,10 +12,9 @@ parameter storage position
 - Move_with_dictionary(data is stored as dictionary)
 
 
-
-
-
 Processing Muti-Poin Include ...
+
+
 Loading ..........................
 
 File Library contains Paramater position and orientation (Dictionary)

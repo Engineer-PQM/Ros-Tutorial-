@@ -62,7 +62,7 @@ NOTE.
 Có ba hình thức giao tiếp trong ROS :  
 - Topics : đây là giao tiếp 1 chiều (publishers vs subscribers )
 - Services : Cái này là giao tiếp 2 chiều nhưng không có thông tin về  progress
-- Actions : Cái này có thể khắc phục được cả nhược điểm 2 cái trên và Thường được sử dụng trong các hoạt động có tính theo dõi và phản hồi liên tục , đây cũng là phương thức chính trong bài 
+- Actions : Cái này có thể khắc phục được cả nhược điểm 2 cái trên và Thường được sử dụng trong các hoạt động có tính theo dõi và phản hồi liên tục , đây cũng là phương thức giao tiếp chính trong bài 
 
 Các ActionClient và ActionServer giao tiếp thông qua một "ROS Action Protocol"
 
@@ -158,7 +158,7 @@ Với giá trị được lưu trong 1 file khác
 
 - File Main.py và test.py là file tham khảo được sử dụng và bóc tách để tìm hiểu các thành phần ở trong 
 
-###                                     Rất xin lỗi Video hơi LAG
+                                           Rất xin lỗi Video hơi LAG
 
 # END
 

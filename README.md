@@ -1,6 +1,6 @@
 ---
 Athor : Phạm Quang Minh 
-Date : A 2021
+Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
 

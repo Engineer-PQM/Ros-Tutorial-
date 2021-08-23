@@ -71,7 +71,7 @@ Mục tiêu của bài này là sử dụng Node để điều hướng thay vì
 
 Về cơ bản mà nói thì ta sẽ sử dụng move_base_msgs.msg trong nhiệm vụ điều hướng (NAVIGATION) và hiện nay ta sẽ sử dụng 2 thứ trong đó là MoveBaseGoal và MoveBaseAction
 
-   File : move_base_msgs/MoveBaseAction.msg  
+   File : move_base_msgs/MoveBaseAction.msg Include  
 
 - MoveBaseActionGoal action_goal
 - MoveBaseActionResult action_result
@@ -80,7 +80,7 @@ Về cơ bản mà nói thì ta sẽ sử dụng move_base_msgs.msg trong nhiệ
 
         Quả Thực cái này rất dài nên khi nào sử dụng sẽ giải thích sau 
         
-File : move_base_msgs/MoveBaseGoal.msg  
+File : move_base_msgs/MoveBaseGoal.msg structure :
 
       geometry_msgs/PoseStamped target_pose
       Header header

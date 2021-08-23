@@ -4,6 +4,7 @@ Author : Phạm Quang Minh
 Gmail : Engineer.pqm@gmail.com
 ---
 
+
 ## Threads
     Move (Robot) to known coordinates X,Y and W =1.
 
@@ -47,12 +48,16 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 ## Configuration
 
 
-NOTE : There are detailed explanations in each piece of code
+NOTE 
+-   The explanation only states the purpose and description
 
-## Explain (Vietsub nhé )
+-   There are detailed explanations in each piece of code
 
 
-Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ không thể đạt được 1 số giá trị mang tích chất về goal ... 
+## Explanation (Vietsub nhé )
+
+
+Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc .. và  không thể đạt được 1 số giá trị mang tích chất về  tọa độ ...
 
 #### TOPIC : Move_base 
 
@@ -64,9 +69,9 @@ Mục tiêu của bài này là sử dụng Node để điều hướng thay vì
 
 ![Move_base](http://library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
 
-Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và move_base_msgs.msg/MoveBaseAction
+Về cơ bản mà nói thì ta sẽ sử dụng move_base_msgs.msg trong nhiệm vụ điều hướng (NAVIGATION) và hiện nay ta sẽ sử dụng 2 thứ trong đó là MoveBaseGoal và MoveBaseAction
 
-File : move_base_msgs/MoveBaseAction.msg gồm có 
+   File : move_base_msgs/MoveBaseAction.msg  
 
 - MoveBaseActionGoal action_goal
 - MoveBaseActionResult action_result
@@ -74,8 +79,8 @@ File : move_base_msgs/MoveBaseAction.msg gồm có
 
 
         Quả Thực cái này rất dài nên khi nào sử dụng sẽ giải thích sau 
-
-   Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
+        
+File : move_base_msgs/MoveBaseGoal.msg  
 
       geometry_msgs/PoseStamped target_pose
       Header header
@@ -102,16 +107,26 @@ File : move_base_msgs/MoveBaseAction.msg gồm có
 
 Directory Poin : Poin and Poin (Từng điểm một)
 
-- Base_Move (Cái này dễ , đơn giản chỉ sử dụng 1 node pub giá trị x/y lên moveBaseGoal)
-- Move gồm cả 2 file .py và .cpp cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó khác file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
+- Base_Move.py 
+    - (Cái này dễ , đơn giản chỉ sử dụng 1 node pub giá trị x/y lên moveBaseGoal)
+- Move.py and Move.cpp
+    - Cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó cải tiến hơn so với file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
 
-- Move_ip(x and y coordinates entered from the keyboard)
-- Move_with_case (use case replace input )
+- Move_ip.cpp 
+    - Dữ liệu x/y được nhập từ bàn phím  
+- Move_with_case.cpp 
+    - Khác cái trên ở chỗ  chỉ cần nhập 1 hoặc 2 nó sẽ tới vị trí cho trước thay vì nhập cả x và y 
 
-parameter storage position 
+Với giá trị được lưu trong 1 file khác 
 
-- Move_with_txt(data is stored as text)
-- Move_with_dictionary(data is stored as dictionary)
+- Move_with_txt.py
+   - Dữ liệu được lưu trữ dưới dạng text và Sử dụng split(",") để tách giá trị giữa dấu , 
+  
+- Move_with_dictionary.py
+    - Do dữ được lưu dưới dạng file Dictionry Trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text )
 
 
-Processing Muti-Poin
+
+Directory Muti-Poin : Nhiều Điểm trong 1 phần di chuyển 
+
+

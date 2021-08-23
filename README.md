@@ -153,7 +153,7 @@ Với giá trị được lưu trong 1 file khác
 - Done.py 
     - (Suử dụng như tệp Txt lưu dữ liệu dưới dạng mảng rồi lần lượt ghi giá trị lên tạo độ)
 
-- Muti.py 
+- Muti.py [Video Demo](https://drive.google.com/file/d/1zmwep9HPIQRpnQsmVdFMnbTnclCE7q0b/view?usp=sharing)
     - (Sử dụng hàm có giá trị và ghi từng giá trị tương ứng lên )
 
 - File Main.py và test.py là file tham khảo được sử dụng và bóc tách để tìm hiểu các thành phần ở trong 

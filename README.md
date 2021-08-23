@@ -13,8 +13,7 @@ This Project requires the following :
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
 ### Readme
-- Move (Robot) to known coordinates X,Y and W =1 
-- Phát hiện vật cản trong các vùng an toàn
+ Move (Robot) to known coordinates X,Y and W =1 
 
 STARTING THE BOT
 ----------------

@@ -57,6 +57,18 @@ NOTE.
 
 ## Explanation. 
 
+#### Actionlib
+
+Có ba hình thức giao tiếp trong ROS :  
+- Topics : đây là giao tiếp 1 chiều (publishers vs subscribers )
+- Services : Cái này là giao tiếp 2 chiều nhưng không có thông tin về  progress
+- Actions : Cái này có thể khắc phục được cả nhược điểm 2 cái trên và Thường được sử dụng trong các hoạt động có tính theo dõi và phản hồi liên tục , đây cũng là phương thức chính trong bài 
+
+Các ActionClient và ActionServer giao tiếp thông qua một "ROS Action Protocol"
+
+
+![Action](http://library.isr.ist.utl.pt/docs/roswiki/attachments/actionlib/client_server_interaction.png)
+
 
 Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc .. và  không thể đạt được 1 số giá trị mang tích chất về  tọa độ ...
 

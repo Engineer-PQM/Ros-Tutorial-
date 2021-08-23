@@ -32,7 +32,7 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
 
 - Auto run
-`roslaunch turtlebot3_gazebo turtlebot3_simulation.launch`
+`roslaunch turtlebot3_gazebo turtlebot3_simulation.launch` initialization map
 
 - Slam
 `roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping`
@@ -49,13 +49,11 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 
 
 
-## Explain
+## Explain (Vietsub)
 
-NOTE : There are detailed explanations in each piece of code
+#### TOPIC : Move_base 
 
-Đây là topic phổ biến cho việc điều hướng trên Robot 
-![alt](http://~library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
-[Move_base/Goal](http://wiki.ros.org/move_base)
+![Move_base](http://library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
 
 
 Directory Poin : 
@@ -71,3 +69,5 @@ parameter storage position
 
 
 Processing Muti-Poin
+
+NOTE : There are detailed explanations in each piece of code

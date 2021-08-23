@@ -1,12 +1,12 @@
 ---
 Author : Phạm Quang Minh 
 Date : Aug 2021
-Gmail : Engineer.pqm@gmail.com
 Company : MKAC
+Gmail : Engineer.pqm@gmail.com
 ---
 
 ## Readme
-    - Move (Robot) to known coordinates X,Y and W =1 .
+    Move (Robot) to known coordinates X,Y and W =1.
 
 ## REQUIREMENTS
 This Project requires the following :
@@ -16,15 +16,35 @@ This Project requires the following :
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
  
 ## Usage
-    1. < Bringup > Export IP   and enable the module. The system
-       breadcrumb block has now been updated.
-    2. Navigate to Administration > Configuration > User Interface > Easy
-       Breadcrumb for configurations. Save Configurations.
+    1. (Bringup) Connect PC to a WiFi device and find the assigned IP address 
+       https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
        
-Sử dụng `job_0` được cấu hình dynamic_reconfigure để chỉnh sửa, sau khi cấu hình xong thì copy (manual) sang job_1..n để sử dụng.
+    2. (Simulation) Can use Gazebo or use Stage , In this project we use Stage (contact by gmail above)
 
-- Chạy `roslaunch scan_safety scan_safety.launch` trên pc robot
-- Chạy `rosrun scan_safety show_safety.py` trên workstation pc để view.
+       
+Commonly used commands
+
+- Map
+Depending on the usage environment, we have different maps , If Bringup run `roslaunch turtlebot3_bringup turtlebot3_robot.launch` , If Simulation world run `roslaunch turtlebot3_gazebo turtlebot3_world.launch` ....
+
+
+- Key
+`roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
+
+- Auto run
+`roslaunch turtlebot3_gazebo turtlebot3_simulation.launch`
+
+- Slam
+`roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping`
+
+
+- Save_map
+`rosrun map_server map_saver -f ~/map` create 2 files named : map (map.pgm and map.yaml)
+
+- Rviz 
+` roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml` User map from Slam (map.yaml)
+
+
 - Chạy `rosrun rqt_reconfigure rqt_reconfigure` để thay đổi job, cập nhật tham số. (Muốn lưu lại tham số sau khi thay đổi thì hiện tại phải ghi trực tiếp vào file `config/safety_config.yaml`, chưa có cơ chế lưu trực tiếp từ reconfigure)
 
 ## Configuration

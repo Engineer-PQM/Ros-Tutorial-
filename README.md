@@ -5,17 +5,17 @@ Gmail : Engineer.pqm@gmail.com
 ---
 
 
-## Threads
+## Threads.
     Move (Robot) to known coordinates X,Y and W =1.
 
-## REQUIREMENTS
+## REQUIREMENTS.
 This Project requires the following :
 
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
  * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
  
-## Usage
+## Usage.
     1. (Bringup) Connect PC to a WiFi device and find the assigned IP address 
        https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
        
@@ -45,17 +45,17 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 ` roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml` User map from Slam (map.yaml)
 
 
-## Configuration
+## Configuration.
 
 
-NOTE 
+NOTE.
 -   The explanation only states the purpose and description
 
 -   There are detailed explanations in each piece of code
 
 -   Đoạn nào giải thích sẽ VietSub cho dễ  hiểu 
 
-## Explanation 
+## Explanation. 
 
 
 Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc .. và  không thể đạt được 1 số giá trị mang tích chất về  tọa độ ...
@@ -111,7 +111,7 @@ Ta có thể xét giá trị như trên trong Terminal bằng cách
          rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}'
          
 
-## Code
+## Code.
 
 #### Directory Poin : Poin and Poin (Từng điểm một)
 
@@ -130,8 +130,8 @@ Với giá trị được lưu trong 1 file khác
 - Move_with_txt.py
    - Dữ liệu được lưu trữ dưới dạng text và Sử dụng split(",") để tách giá trị giữa dấu , 
   
-- Move_with_dictionary.py
-    - Do dữ được lưu dưới dạng file Dictionry xem trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text ) [Video Demo](https://drive.google.com/file/d/1GcPGdj0GGRlgUv0CH6B-aCYBWdvZqyLB/view?usp=sharing)
+- Move_with_dictionary.py [Video Demo](https://drive.google.com/file/d/1GcPGdj0GGRlgUv0CH6B-aCYBWdvZqyLB/view?usp=sharing)
+    - Do dữ được lưu dưới dạng file Dictionry xem trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text ).
 
 
 

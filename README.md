@@ -4,7 +4,6 @@ Author : Phạm Quang Minh
 Gmail : Engineer.pqm@gmail.com
 ---
 
-
 ## Threads.
     Move (Robot) to known coordinates X,Y and W =1.
 
@@ -129,36 +128,37 @@ Ta có thể xét giá trị như trên trong Terminal bằng cách
 
 #### Directory Poin : Poin and Poin (Từng điểm một)
 
-- Base_Move.py 
-    - (Cái này dễ , đơn giản chỉ sử dụng 1 node pub giá trị x/y lên moveBaseGoal)
-- Move.py and Move.cpp
-    - Cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó cải tiến hơn so với file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
+* Base_Move.py 
+    > Cái này dễ , đơn giản chỉ sử dụng 1 node pub giá trị x/y lên moveBaseGoal
+* Move.py and Move.cpp
+    > Cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó cải tiến hơn so với file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
 
-- Move_ip.cpp [Video Demo](https://drive.google.com/file/d/1mrTuHhitEaFwosD5H75a5c9AG8L4a5cv/view?usp=sharing)
-    - Dữ liệu x/y được nhập từ bàn phím  
-- Move_with_case.cpp [Video Demo](https://drive.google.com/file/d/1mvjackHJ7GJvbxHQibSqembTMlMyC_2k/view?usp=sharing)
-    - Khác cái trên ở chỗ  chỉ cần nhập 1 hoặc 2 nó sẽ tới vị trí cho trước thay vì nhập cả x và y 
+* Move_ip.cpp [Video Demo](https://drive.google.com/file/d/1mrTuHhitEaFwosD5H75a5c9AG8L4a5cv/view?usp=sharing)
+    > Dữ liệu x/y được nhập từ bàn phím  
+* Move_with_case.cpp [Video Demo](https://drive.google.com/file/d/1mvjackHJ7GJvbxHQibSqembTMlMyC_2k/view?usp=sharing)
+    > Khác cái trên ở chỗ  chỉ cần nhập 1 hoặc 2 nó sẽ tới vị trí cho trước thay vì nhập cả x và y 
 
 Với giá trị được lưu trong 1 file khác 
 
-- Move_with_txt.py
-   - Dữ liệu được lưu trữ dưới dạng text và Sử dụng split(",") để tách giá trị giữa dấu , 
+* Move_with_txt.py
+   > Dữ liệu được lưu trữ dưới dạng text và Sử dụng split(",") để tách giá trị giữa dấu , 
   
-- Move_with_dictionary.py [Video Demo](https://drive.google.com/file/d/1GcPGdj0GGRlgUv0CH6B-aCYBWdvZqyLB/view?usp=sharing)
-    - Do dữ được lưu dưới dạng file Dictionry xem trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text ).
+* Move_with_dictionary.py [Video Demo](https://drive.google.com/file/d/1GcPGdj0GGRlgUv0CH6B-aCYBWdvZqyLB/view?usp=sharing)
+    > Do dữ được lưu dưới dạng file Dictionry xem trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text ).
 
 
 
 #### Directory Muti-Poin : Di chuyển nhiều điểm 
-- Done.py 
-    - (Suử dụng như tệp Txt lưu dữ liệu dưới dạng mảng rồi lần lượt ghi giá trị lên tạo độ)
+* Done.py 
+    > (Suử dụng như tệp Txt lưu dữ liệu dưới dạng mảng rồi lần lượt ghi giá trị lên tạo độ)
 
-- Muti.py [Video Demo](https://drive.google.com/file/d/1zmwep9HPIQRpnQsmVdFMnbTnclCE7q0b/view?usp=sharing)
-    - (Sử dụng hàm có giá trị và ghi từng giá trị tương ứng lên )
+* Muti.py [Video Demo](https://drive.google.com/file/d/1zmwep9HPIQRpnQsmVdFMnbTnclCE7q0b/view?usp=sharing)
+    > (Sử dụng hàm có giá trị và ghi từng giá trị tương ứng lên )
 
-- File Main.py và test.py là file tham khảo được sử dụng và bóc tách để tìm hiểu các thành phần ở trong 
+* File Main.py và test.py là file tham khảo được sử dụng và bóc tách để tìm hiểu các thành phần ở trong 
 
                                            Rất xin lỗi Video hơi LAG
 
+23/8/2021
 # END
 

@@ -23,7 +23,6 @@ $ echo "ROS_MASTER_URI=http://192.168.1.66:11311" >> ~/.bashrc
  
 ## Usage.
     1. (Bringup) Connect PC to a WiFi device and find the assigned IP address 
-       https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
        
     2. (Simulation) Can use Gazebo or use Stage , In this project we use Stage (contact by gmail above)
 

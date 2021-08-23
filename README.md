@@ -3,19 +3,23 @@ Author : Phạm Quang Minh
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
-## Topic : NAVIGATION
+### Topic : NAVIGATION
 ------------
-### REQUIREMENTS
 
+
+#### REQUIREMENTS
 This Project requires the following :
 
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
- * [ROS MELODIC](http://wiki.ros.org/melodic/Installation/Ubuntu)
-### Readme
+ * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+ * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
-- Xác định các vùng an toàn
+#### Readme
+- Move (Robot) to known coordinates X,Y and W =1 
 - Phát hiện vật cản trong các vùng an toàn
 
+STARTING THE BOT
+----------------
 
 
 

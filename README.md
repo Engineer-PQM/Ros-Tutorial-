@@ -4,6 +4,7 @@ Author : Phạm Quang Minh
 Gmail : Engineer.pqm@gmail.com
 ---
 
+
 ## Threads.
     Move (Robot) to known coordinates X,Y and W =1.
 
@@ -13,6 +14,12 @@ This Project requires the following :
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
  * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
+ 
+ ```
+$ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+$ echo "export ROS_HOSTNAME=192.168.1.66" >> ~/.bashrc
+$ echo "ROS_MASTER_URI=http://192.168.1.66:11311" >> ~/.bashrc
+```
  
 ## Usage.
     1. (Bringup) Connect PC to a WiFi device and find the assigned IP address 

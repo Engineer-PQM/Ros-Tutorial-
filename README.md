@@ -1,7 +1,6 @@
 ---
 Author : Phạm Quang Minh 
 Date : Aug 2021
-Company : MKAC
 Gmail : Engineer.pqm@gmail.com
 ---
 

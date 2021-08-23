@@ -3,6 +3,8 @@ Author : Phạm Quang Minh
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
+STARTING THE BOT
+----------------
 ### CONTENTS OF THIS FILE
 
 - Move (Robot) to known coordinates X,Y and W =1 

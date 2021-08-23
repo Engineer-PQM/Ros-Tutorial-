@@ -120,9 +120,9 @@ Ta có thể xét giá trị như trên trong Terminal bằng cách
 - Move.py and Move.cpp
     - Cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó cải tiến hơn so với file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
 
-- Move_ip.cpp 
+- Move_ip.cpp [Video Demo](https://drive.google.com/file/d/1GcPGdj0GGRlgUv0CH6B-aCYBWdvZqyLB/view?usp=sharing)
     - Dữ liệu x/y được nhập từ bàn phím  
-- Move_with_case.cpp 
+- Move_with_case.cpp [Video Demo](https://drive.google.com/file/d/1mvjackHJ7GJvbxHQibSqembTMlMyC_2k/view?usp=sharing)
     - Khác cái trên ở chỗ  chỉ cần nhập 1 hoặc 2 nó sẽ tới vị trí cho trước thay vì nhập cả x và y 
 
 Với giá trị được lưu trong 1 file khác 

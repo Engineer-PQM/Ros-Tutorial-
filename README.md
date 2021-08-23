@@ -73,16 +73,16 @@ File : move_base_msgs/MoveBaseAction.msg gồm có
 - MoveBaseActionFeedback action_feedback
 
 
-        Quả Thực cái này rất dài nên khi nào sử dụng s
+        Quả Thực cái này rất dài nên khi nào sử dụng sẽ giải thích sau 
 
-  Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
-    
-    geometry_msgs/PoseStamped target_pose
-    Header header
+   Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
+
+      geometry_msgs/PoseStamped target_pose
+      Header header
         uint32 seq
         time stamp
         string frame_id
-    geometry_msgs/Pose pose
+      geometry_msgs/Pose pose
         geometry_msgs/Point position
             float64 x
             float64 y

@@ -150,5 +150,13 @@ Với giá trị được lưu trong 1 file khác
 
 
 #### Directory Muti-Poin : Di chuyển nhiều điểm 
+- Done.py 
+    - (Suử dụng như tệp Txt lưu dữ liệu dưới dạng mảng rồi lần lượt ghi giá trị lên tạo độ)
 
-Đang thực hiện .......................................................
+- Muti.py 
+    - (Sử dụng hàm có giá trị và ghi từng giá trị tương ứng lên )
+
+- File Main.py và test.py là file tham khảo được sử dụng và bóc tách để tìm hiểu các thành phần ở trong 
+
+# 
+

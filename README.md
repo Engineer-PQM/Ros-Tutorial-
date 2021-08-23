@@ -10,7 +10,7 @@ Gmail : Engineer.pqm@gmail.com
 This Project requires the following :
 
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
- * [Panels](https://www.drupal.org/project/panels)
+ * [ROS MELODIC](http://wiki.ros.org/melodic/Installation/Ubuntu)
 ### Readme
 
 - Xác định các vùng an toàn

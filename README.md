@@ -7,9 +7,9 @@ Gmail : Engineer.pqm@gmail.com
 ------------
 ### REQUIREMENTS
 
-This module requires the following modules:
+This Project requires the following :
 
- * [Views](https://www.drupal.org/project/views)
+ * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
  * [Panels](https://www.drupal.org/project/panels)
 ### Readme
 

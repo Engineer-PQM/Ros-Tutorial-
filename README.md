@@ -20,7 +20,7 @@ Gmail : Engineer.pqm@gmail.com
       <a href="#Explanation">About The Project</a>
       <ul>
         <li><a href="#Actionlib">Actionlib</a></li>
-        <li><a href="#TOPIC : Move_base">TOPIC : Move_base</a></li>
+        <li><a href="#TOPIC Move_base">TOPIC Move_base</a></li>
       </ul>
     </li>
     <li>
@@ -108,7 +108,7 @@ Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng 
 
 Nhưng không thể đạt được 1 số giá trị mang tích chất về  tọa độ (Goal) V.v.. 
 
-#### TOPIC : Move_base 
+#### TOPIC Move_base 
 
  Đơn giản mà nói Move_base là 1 trong phần tử chính của ROS Navigation stack Nó di chuyển robot từ vị trí hiện tại của nó đến vị trí mục tiêu được published trong topic move_base/goal .
 

@@ -5,11 +5,11 @@ Gmail : Engineer.pqm@gmail.com
 ---
 STARTING THE BOT
 ----------------
-### CONTENTS OF THIS FILE
+# CONTENTS OF THIS FILE
 ----------------
 - Move (Robot) to known coordinates X,Y and W =1 
 
-### REQUIREMENTS
+# REQUIREMENTS
 ----------------
 This Project requires the following :
 

@@ -70,7 +70,9 @@ Các ActionClient và ActionServer giao tiếp thông qua một "ROS Action Prot
 ![Action](http://library.isr.ist.utl.pt/docs/roswiki/attachments/actionlib/client_server_interaction.png)
 
 
-Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc .. và  không thể đạt được 1 số giá trị mang tích chất về  tọa độ ...
+Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc V.v.. 
+
+Nhưng không thể đạt được 1 số giá trị mang tích chất về  tọa độ (Goal) V.v.. 
 
 #### TOPIC : Move_base 
 

@@ -1,5 +1,5 @@
 ---
-Athor : Phạm Quang Minh 
+Author : Phạm Quang Minh 
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---

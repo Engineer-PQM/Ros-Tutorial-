@@ -3,7 +3,8 @@ Author : Phạm Quang Minh
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
-
+### CONTENTS OF THIS FILE
+- Move (Robot) to known coordinates X,Y and W =1 
 
 ### REQUIREMENTS
 This Project requires the following :
@@ -12,8 +13,6 @@ This Project requires the following :
  * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
-### Readme
- Move (Robot) to known coordinates X,Y and W =1 
 
 STARTING THE BOT
 ----------------

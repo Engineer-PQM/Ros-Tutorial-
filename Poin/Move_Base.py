@@ -4,7 +4,7 @@
 import rospy
 from move_base_msgs.msg import MoveBaseActionGoal
 
-rospy.init_node('topic_publisher')
+rospy.init_node('Base')
 pub = rospy.Publisher('/move_base/goal', MoveBaseActionGoal, queue_size=5)
 rate = rospy.Rate(0.1)
 

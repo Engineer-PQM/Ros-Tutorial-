@@ -6,7 +6,7 @@ Company : MKAC
 ---
 
 ## Readme
-    1. Move (Robot) to known coordinates X,Y and W =1 .
+    - Move (Robot) to known coordinates X,Y and W =1 .
 
 ## REQUIREMENTS
 This Project requires the following :

@@ -6,7 +6,6 @@ Gmail : Engineer.pqm@gmail.com
 ## ROS TUTORIAL NAVIGATION
 ------------
 ### REQUIREMENTS
-------------
 
 This module requires the following modules:
 

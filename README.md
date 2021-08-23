@@ -53,10 +53,13 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 
 NOTE : There are detailed explanations in each piece of code
 
-Directory Poin include file Cpp and File py
+Đây là topic phổ biến cho việc điều hướng trên Robot 
+![alt](http://~library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
+[Move_base/Goal](http://wiki.ros.org/move_base)
 
-- Base_Move
 
+Directory Poin : 
+- Base_Move 
 - Move.py and Move.cpp Advanced of file Base_move
 - Move_ip(x and y coordinates entered from the keyboard)
 - Move_with_case (use case replace input )

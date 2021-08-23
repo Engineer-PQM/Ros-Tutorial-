@@ -45,16 +45,18 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 ` roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml` User map from Slam (map.yaml)
 
 
-- Chạy `rosrun rqt_reconfigure rqt_reconfigure` để thay đổi job, cập nhật tham số. (Muốn lưu lại tham số sau khi thay đổi thì hiện tại phải ghi trực tiếp vào file `config/safety_config.yaml`, chưa có cơ chế lưu trực tiếp từ reconfigure)
-
 ## Configuration
 
 
 
+## Explain
 
-Done Move at directory Poin include file Cpp and Py include 
+NOTE : There are detailed explanations in each piece of code
 
-- Base_Move (....)
+Directory Poin include file Cpp and File py
+
+- Base_Move
+
 - Move.py and Move.cpp Advanced of file Base_move
 - Move_ip(x and y coordinates entered from the keyboard)
 - Move_with_case (use case replace input )
@@ -65,10 +67,4 @@ parameter storage position
 - Move_with_dictionary(data is stored as dictionary)
 
 
-Processing Muti-Poin Include ...
-
-### Dynamic reconfigure
-
-![](imgs/rr_scan.png)
-
-* `current_job` và `foot_print` có thể thay đổi bằng [mission_manager](https://gitlab.com/mkac-agv/mission_manager)
+Processing Muti-Poin

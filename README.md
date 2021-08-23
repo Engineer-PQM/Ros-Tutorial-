@@ -123,7 +123,7 @@ Với giá trị được lưu trong 1 file khác
    - Dữ liệu được lưu trữ dưới dạng text và Sử dụng split(",") để tách giá trị giữa dấu , 
   
 - Move_with_dictionary.py
-    - Do dữ được lưu dưới dạng file Dictionry Trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text )
+    - Do dữ được lưu dưới dạng file Dictionry xem trong mục Library/Dictionary.py (Dạng này thì tường minh hơn so với dạng file text )
 
 
 

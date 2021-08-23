@@ -35,13 +35,16 @@ def movebase_client(x,y):
 if __name__ == '__main__':
     try:
         rospy.init_node('movebase_client_py')
-        print 'Testing goal (4.0, 0) with no (invalid) headig...'
+        print 'Poin 1 (4.0549993515, 0.229999542236) with no (invalid) headig...'
         result = movebase_client(4.0549993515, 0.229999542236)
-        print 'Testing goal (1.8, 2, 3.14159)...'
+        print 'Poin 2 (0.414999872446, -0.460000097752)'
         result = movebase_client( 0.414999872446, -0.460000097752)
-        print 'Testing goal (1.8, 1, 1.5707)...'
+        print 'Poin 3 (1.5649998188,  2.24999952316)'
         result = movebase_client( 1.5649998188, 2.24999952316)
-
+        print 'Poin 4 (2.6249995231, -0.240000292659)'
+        result = movebase_client( 2.62499952316, -0.240000292659)
+        print 'Poin 5 (2.79499959946, 1.75999951363)...'
+        result = movebase_client( 2.79499959946, 1.75999951363)
         if result:
             rospy.loginfo("Hoan Thanh di toi muc tieu ")
     except rospy.ROSInterruptException:

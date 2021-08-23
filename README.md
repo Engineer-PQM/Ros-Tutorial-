@@ -60,13 +60,22 @@ Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng 
 
 Mục tiêu điều hướng 2D trong Rviz để chỉ định vị trí và hướng mục tiêu. Vị trí này (x, y, z) và hướng (x, y, z, w) tuy nhiên w = 1 để không xoay trục tọa độ 
 
-Mục tiêu của bài này là viết 1 Node để điều hướng thay vì sử dụng Rviz 
+Mục tiêu của bài này là sử dụng Node để điều hướng thay vì sử dụng Rviz 
 
 ![Move_base](http://library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
 
-Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và move_base_msgs.msg/MoveBaseGoal
+Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và move_base_msgs.msg/MoveBaseAction
 
-    Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
+File : move_base_msgs/MoveBaseAction.msg gồm có 
+
+- MoveBaseActionGoal action_goal
+- MoveBaseActionResult action_result
+- MoveBaseActionFeedback action_feedback
+
+
+        Quả Thực cái này rất dài nên khi nào sử dụng s
+
+  Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
     
     geometry_msgs/PoseStamped target_pose
     Header header
@@ -84,7 +93,7 @@ Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và
             float64 z
             float64 w
     
-  Ta có thể dễ dàng xét được vị trí Goal cho Robot bằng cách thêm giá trị x/y vào MoveBaseGoal nếu ta xét id = "map" và như đã nói ta sẽ để w = 1 để đảm bảo không xoay trục tọa độ 
+  Ta có thể dễ dàng xét được vị trí Goal cho Robot bằng cách thêm giá trị x/y vào MoveBaseGoal nếu ta xét id = "map" và như đã nói ta sẽ để w = 1 để đảm bảo không xoay trục tọa độ các giá trị còn lại có thể có hoặc không 
        
         moveBaseGoal.target_pose.header.frame_id = "map"
         moveBaseGoal.target_pose.pose.position.x = x
@@ -93,8 +102,9 @@ Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và
 
 Directory Poin : Poin and Poin (Từng điểm một)
 
-- Base_Move 
-- Move.py and Move.cpp Advanced of file Base_move
+- Base_Move (Cái này dễ , đơn giản chỉ sử dụng 1 node pub giá trị x/y lên moveBaseGoal)
+- Move gồm cả 2 file .py và .cpp cả 2 file có ý nghĩa và nhiệm vụ như nhau chỉ là ngôn ngữ sử dụng (về cơ bản mà nói nó khác file Base_move ở chỗ nó tạo ra 1 cái action client và gọi với action definition file "MoveBaseAction")
+
 - Move_ip(x and y coordinates entered from the keyboard)
 - Move_with_case (use case replace input )
 

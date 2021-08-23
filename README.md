@@ -4,6 +4,7 @@ Author : Phạm Quang Minh
 Gmail : Engineer.pqm@gmail.com
 ---
 
+
 ## Threads.
     Move (Robot) to known coordinates X,Y and W =1.
 
@@ -52,7 +53,7 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 ## Configuration.
 
 
-NOTE.
+⭐️ NOTE.
 -   The explanation only states the purpose and description
 
 -   There are detailed explanations in each piece of code
@@ -166,5 +167,5 @@ Với giá trị được lưu trong 1 file khác
 
 23/8/2021
 
-# END
+# END  
 

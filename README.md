@@ -3,8 +3,18 @@ Author : Phạm Quang Minh
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
-### Topic : NAVIGATION
-------------
+CONTENTS OF THIS FILE
+---------------------
+
+ * Introduction
+ * Installation
+ * Starting the Bot
+  * Starting the Bot with Drush
+  * Starting the Bot with bot_start.php
+ * Using the Bot
+ * IRC Message Hooks
+ * Other IRC Hooks
+ * Design Decisions
 
 
 #### REQUIREMENTS

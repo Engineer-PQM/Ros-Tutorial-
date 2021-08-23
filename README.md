@@ -3,28 +3,16 @@ Author : Phạm Quang Minh
 Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
-CONTENTS OF THIS FILE
----------------------
-
- * Introduction
- * Installation
- * Starting the Bot
-  * Starting the Bot with Drush
-  * Starting the Bot with bot_start.php
- * Using the Bot
- * IRC Message Hooks
- * Other IRC Hooks
- * Design Decisions
 
 
-#### REQUIREMENTS
+### REQUIREMENTS
 This Project requires the following :
 
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
  * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
-#### Readme
+### Readme
 - Move (Robot) to known coordinates X,Y and W =1 
 - Phát hiện vật cản trong các vùng an toàn
 

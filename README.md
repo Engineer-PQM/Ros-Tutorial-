@@ -18,3 +18,12 @@ Processing Muti-Poin Include ...
 Loading ..........................
 
 File Library contains Paramater position and orientation (Dictionary)
+
+
+REQUIREMENTS
+------------
+
+This module requires the following modules:
+
+ * [Views](https://www.drupal.org/project/views)
+ * [Panels](https://www.drupal.org/project/panels)

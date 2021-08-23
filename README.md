@@ -4,8 +4,7 @@ Date : Aug 2021
 Gmail : Engineer.pqm@gmail.com
 ---
 
-## CONTENTS OF THIS FILE
-
+# Readme
 - Move (Robot) to known coordinates X,Y and W =1 
 
 ## REQUIREMENTS
@@ -15,12 +14,6 @@ This Project requires the following :
  * [Ubuntu 18.04 or newer](https://ubuntu.com/download/desktop)
  * [Ros Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
  * [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
-
-
-STARTING THE BOT
-----------------
-
-
 
 Done Move at directory Poin include file Cpp and Py include 
 

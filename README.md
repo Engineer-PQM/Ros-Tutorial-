@@ -47,17 +47,52 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 ## Configuration
 
 
+NOTE : There are detailed explanations in each piece of code
 
-## Explain (Vietsub)
+## Explain (Vietsub nhé )
 
 
-Ch
+Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ không thể đạt được 1 số giá trị mang tích chất về goal ... 
+
 #### TOPIC : Move_base 
+
+ Đơn giản mà nói Move_base là 1 trong phần tử chính của ROS Navigation stack Nó di chuyển robot từ vị trí hiện tại của nó đến vị trí mục tiêu được published trong topic move_base/goal .
+
+Mục tiêu điều hướng 2D trong Rviz để chỉ định vị trí và hướng mục tiêu. Vị trí này (x, y, z) và hướng (x, y, z, w) tuy nhiên w = 1 để không xoay trục tọa độ 
+
+Mục tiêu của bài này là viết 1 Node để điều hướng thay vì sử dụng Rviz 
 
 ![Move_base](http://library.isr.ist.utl.pt/docs/roswiki/attachments/move_base/overview_tf.png)
 
+Nếu để ý hơn 1 tý chúng ta sẽ có move_base_msgs.msg/MoveBaseGoal và move_base_msgs.msg/MoveBaseGoal
 
-Directory Poin : 
+    Ta xét riêng từng cái ra thì ta được cấu trúc của move_base_msgs.msg/MoveBaseGoal như sau 
+    
+    geometry_msgs/PoseStamped target_pose
+    Header header
+        uint32 seq
+        time stamp
+        string frame_id
+    geometry_msgs/Pose pose
+        geometry_msgs/Point position
+            float64 x
+            float64 y
+            float64 z
+        geometry_msgs/Quaternion orientation
+            float64 x
+            float64 y
+            float64 z
+            float64 w
+    
+  Ta có thể dễ dàng xét được vị trí Goal cho Robot bằng cách thêm giá trị x/y vào MoveBaseGoal nếu ta xét id = "map" và như đã nói ta sẽ để w = 1 để đảm bảo không xoay trục tọa độ 
+       
+        moveBaseGoal.target_pose.header.frame_id = "map"
+        moveBaseGoal.target_pose.pose.position.x = x
+        moveBaseGoal.target_pose.pose.position.y = y
+        moveBaseGoal.target_pose.pose.orientation.w = 1.0
+
+Directory Poin : Poin and Poin (Từng điểm một)
+
 - Base_Move 
 - Move.py and Move.cpp Advanced of file Base_move
 - Move_ip(x and y coordinates entered from the keyboard)
@@ -70,5 +105,3 @@ parameter storage position
 
 
 Processing Muti-Poin
-
-NOTE : There are detailed explanations in each piece of code

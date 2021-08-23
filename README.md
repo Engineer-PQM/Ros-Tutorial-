@@ -53,8 +53,9 @@ NOTE
 
 -   There are detailed explanations in each piece of code
 
+-   Đoạn nào giải thích sẽ VietSub cho dễ  hiểu 
 
-## Explanation (Vietsub nhé )
+## Explanation 
 
 
 Chúng ta có thể điều khiển robot đến một mục tiêu, sử dụng base_move và amcl tuy nhiên amcl chỉ thuật là giá trị mang tính chất điều khiển động cơ như vận tốc .. và  không thể đạt được 1 số giá trị mang tích chất về  tọa độ ...
@@ -104,6 +105,13 @@ File : move_base_msgs/MoveBaseGoal.msg structure :
         moveBaseGoal.target_pose.pose.position.x = x
         moveBaseGoal.target_pose.pose.position.y = y
         moveBaseGoal.target_pose.pose.orientation.w = 1.0
+
+Ta có thể xét giá trị như trên trong Terminal bằng cách 
+
+         rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}'
+         
+
+## Code
 
 #### Directory Poin : Poin and Poin (Từng điểm một)
 

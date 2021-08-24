@@ -3,10 +3,8 @@ Date : Aug 2021
 Author : Phạm Quang Minh 
 Gmail : Engineer.pqm@gmail.com
 ---
-<h3 align="center">----------NAVIGATION----------</h3>
-  <p align="center">
-    Mấy cái linh tinh này để test các File Readme xem có gì vui không thôi !
-</p>
+<h3 align="center">-------------------------------------</h3>
+
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">

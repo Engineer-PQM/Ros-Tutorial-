@@ -75,7 +75,8 @@ Depending on the usage environment, we have different maps , If Bringup run `ros
 
 
 - Save_map
-`rosrun map_server map_saver -f ~/map` create 2 files named : map (map.pgm and map.yaml)
+`rosrun map_server map_saver -f ~/map` create 2 files named : map 
+([map.yaml](https://drive.google.com/file/d/1Sgh59YlcczLijoO3PJziSD-_hNcs6wpK/view?usp=sharing) and [map.pgm](https://drive.google.com/file/d/1-D501HZLUUH2t253WPeOLxfVnnVY9YQQ/view?usp=sharing))
 
 - Rviz 
 ` roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml` User map from Slam (map.yaml)

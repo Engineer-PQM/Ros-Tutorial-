@@ -52,7 +52,22 @@ Chu Vi (C) với Pi ( ~ 3.14)
 
     (C) = d x Pi = 0.15 * 3.14 = 0.471 
 
-Vận tốc tuyến tính 
+Vận tốc của từng bánh 
 
-    f * C = 1.666666 * 0.471 = 0.78499 m/s 
+    V = f * C = 1.666666 * 0.471 = 0.78499 m/s 
 
+Đặt
+
+    Vận tốc bánh trái = left_vel
+    Vận tốc bánh phải = right_vel
+    
+Vận tốc tuyến tính khi động cơ di chuyển thằng theo chiều X sẽ là 
+
+    linear.x =  (left_vel+ right_vel )/2
+    
+Tuy nhiên giá trị ta có đang ở dạng Analog (Max = 255 ) nên giá trị tỉ lệ là 
+
+    0.78499/255 = 0.003078
+
+
+###  ⭐️  Angular.z

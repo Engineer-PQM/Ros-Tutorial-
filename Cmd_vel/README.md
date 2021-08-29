@@ -69,6 +69,8 @@ Xét để giá trị trùng với Refer như trên
     Vận tốc bánh trái = wheel_velocity[LEFT]
     Vận tốc bánh phải = wheel_velocity[RIGHT]
     
+![240779389_617990985833400_1602310391635025706_n](https://user-images.githubusercontent.com/82381342/131255930-9c834d89-a18c-49f7-abeb-c03be1364e51.png)
+    
 Vận tốc tuyến tính khi động cơ di chuyển thằng theo chiều X sẽ là 
 
     linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2

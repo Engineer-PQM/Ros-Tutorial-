@@ -163,6 +163,10 @@ Do phương trình (3) là điều kiện nên ta được phương trình (2) -
       - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
       - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
             Đoạn này hơi ảo ma Canada 1 tý là 2 giá trị V1 và V2 bằng nhau 
+            Giới hạn của Robot này sẽ là
+            
+            Tốc độ tuyến tính 0.75 - 0.75 
+            Tốc độ góc -1.7 - 1.7 
        
       - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
      

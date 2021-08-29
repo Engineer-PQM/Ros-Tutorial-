@@ -42,6 +42,7 @@ Trong này chúng ta chỉ quan tâm tới
       
       - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
       - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
+      - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
    
 ## Algorithm
 

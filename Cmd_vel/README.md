@@ -158,7 +158,7 @@ Do phương trình (3) là điều kiện nên ta được phương trình (2) -
 > Angular.z = (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation 
 
 
-      Chú ý : 
+      Lưu ý : 
       
       - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
       - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2

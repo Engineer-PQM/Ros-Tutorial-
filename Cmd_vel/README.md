@@ -132,7 +132,7 @@ Xét hệ tọa độ của Robot theo trục x ta có
 
 ![240877546_1219122535234448_4965050885662977196_n](https://user-images.githubusercontent.com/82381342/131258172-442515c4-5ca3-4642-825c-f577edbc9fb6.png)
 
-Tọa độ trục dương của robot luôn về phía bên trái và ngược lại nghĩa là nếu di chuyển về phía dương thì 
+Tọa độ trục dương của robot luôn về phía bên trái và ngược lại nghĩa là nếu di chuyển về phía dương t 
 
     wheel_velocity[LEFT] < wheel_velocity[RIGHT]
     

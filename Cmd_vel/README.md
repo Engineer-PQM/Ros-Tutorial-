@@ -36,13 +36,6 @@ Trong này chúng ta chỉ quan tâm tới
 
 - Linear.x  `m/s`   ( Vận tốc tuyến tính = V1 )
 - Angular.z `Rad/s` ( Vận tốc góc = V2 )
-
-
-      Chú ý : 
-      
-      - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
-      - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
-      - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
    
 ## Algorithm
 
@@ -84,6 +77,7 @@ Vận tốc tuyến tính khi động cơ di chuyển thằng theo chiều X s�
 
 Bằng cách cộng phương trình (1) và (2) theo Refer như trên ta cũng có kết quả tương tự như sau 
 
+    wheel_velocity[RIGHT] + wheel_velocity[LEFT] = linear.x + linear.x + ((Angular.z * wheel_separation / 2) - (Angular.z * wheel_separation / 2))
     wheel_velocity[LEFT] + wheel_velocity[RIGHT] = 2 linear.x
     linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
     
@@ -145,4 +139,26 @@ Tọa độ trục dương của robot luôn về phía bên trái và ngược 
 Xét trục tọa độ đi từ X thì ta sẽ coi bánh bên trái là tâm ( giá trị luôn bằng 0 ) để làm được điều này ta phải trừ đi giá trị của bánh phải để cho cân bằng 
 nên mỗi khi quay ta có 
 
-    wheel_velocity[RIGHT] - wheel_velocity[LEFT]
+    wheel_velocity[RIGHT] - wheel_velocity[LEFT] (3)
+    
+Do phương trình (3) yêu cầu ta được phương trình (2) - phương trình (1) Theo Refer trên ta được 
+
+    wheel_velocity[RIGHT] - wheel_velocity[LEFT]  = linear.x - linear.x + ((Angular.z * wheel_separation / 2) + (Angular.z * wheel_separation / 2))  
+    wheel_velocity[RIGHT] - wheel_velocity[LEFT] = 2(Angular.z * wheel_separation / 2)
+    wheel_velocity[RIGHT] - wheel_velocity[LEFT] =  Angular.z * wheel_separation
+    (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation = Angular.z
+    
+    Angular.z = (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation 
+
+## END 
+
+linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
+Angular.z = (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation 
+
+
+      Chú ý : 
+      
+      - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
+      - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
+      - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
+      

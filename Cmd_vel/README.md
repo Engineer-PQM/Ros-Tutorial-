@@ -153,8 +153,9 @@ Do phương trình (3) yêu cầu ta được phương trình (2) - phương tr�
 ## END 
 
 
->linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
->Angular.z = (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation 
+     linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
+
+     Angular.z = (wheel_velocity[RIGHT] - wheel_velocity[LEFT]) / wheel_separation 
 
 
       Chú ý : 

@@ -165,8 +165,13 @@ Do phương trình (3) là điều kiện nên ta được phương trình (2) -
             Đoạn này hơi ảo ma Canada 1 tý là 2 giá trị V1 và V2 bằng nhau 
             Giới hạn của Robot này sẽ là
             
-            Tốc độ tuyến tính 0.75 - 0.75 
-            Tốc độ góc -1.7 - 1.7 
+            Tốc độ tuyến tính - 0.75 - 0.75 
+            Tốc độ góc        - 1.7 - 1.7 
+            
+            So với Turtlebot 
+            
+            Tốc độ tuyến tính - 0.22 - 0.22 
+            Tốc độ góc        - 2.8 - 2.8
        
       - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
      

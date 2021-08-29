@@ -86,3 +86,17 @@ Tuy nhiên giá trị ta có đang ở dạng Analog (Max = 255 ) nên giá tr�
 
 
 ###  ⭐️  Angular.z
+
+Vì vận tốc góc được tính bằng Rad/s nên ta phải quy đổi 1 số giá trị sang rad như bằng cách nhân với hệ số 0.10472 
+[Turtlebot](https://github.com/ROBOTIS-GIT/OpenCR/blob/master/arduino/opencr_arduino/opencr/libraries/turtlebot3/include/turtlebot3/turtlebot3_motor_driver.h)
+
+![240779389_617990985833400_1602310391635025706_n](https://user-images.githubusercontent.com/82381342/131256905-b5aab0f6-99e4-4e83-9a84-b14f72fbb7b0.png)
+
+    w = 100 * 0.10472 = 10.472
+
+Tuy nhiên đây là Tutorial nên mình sẽ giải thích vì sao 
+
+    f = 1.666666 v/s (như trên)
+    T = 1/f = 1/1.666666 = 0.600(s)
+    w = 2Pi/T = 6.24/0.60 = 10.4 Rad/s 
+    

@@ -37,6 +37,12 @@ Trong này chúng ta chỉ quan tâm tới
 - Linear.x  `m/s`   ( Vận tốc tuyến tính = V1 )
 - Angular.z `Rad/s` ( Vận tốc góc = V2 )
 
+
+      Chú ý : 
+      
+      - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
+      - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
+   
 ## Algorithm
 
 Ta xét Refer của 

@@ -162,6 +162,8 @@ Do phương trình (3) yêu cầu ta được phương trình (2) - phương tr�
       
       - Tại Linear.x thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V1
       - Tại Angular.z thì wheel_velocity[LEFT] và wheel_velocity[RIGHT] được xác định bằng V2
+      Đoạn này hơi ảo ma Canada 1 tý là 2 giá trị V1 và V2 bằng nhau , Do giá trị cơ khi q
+       
       - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
      
 Công thức [Tham Khao](https://vi.wikipedia.org/wiki/Chuy%E1%BB%83n_%C4%91%E1%BB%99ng_tr%C3%B2n)

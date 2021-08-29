@@ -173,7 +173,7 @@ Do phương trình (3) là điều kiện nên ta được phương trình (2) -
             Tốc độ tuyến tính - 0.22 - 0.22 
             Tốc độ góc        - 2.8 - 2.8
             
-            Nghĩa là sẽ 
+            Nghĩa là về tốc độ sẽ di chuyển nhanh hơn nhưng tốc độ quay sẽ kém hơn 
        
       - Giá trị đang được tính là giá trị lớn nhất đạt được (MAX)
      

@@ -7,6 +7,7 @@ Gmail : Engineer.pqm@gmail.com
 <h3 align="center">-------------------------------------</h3>
 
 
+
 ## Topic /Cmd_vel
 
  Convert Giá trị động cơ sang Twist 
@@ -38,6 +39,13 @@ Trong này chúng ta chỉ quan tâm tới
 
 ## Algorithm
 
+Ta xét Refer của 
+[Turtlebot](https://github.com/ROBOTIS-GIT/OpenCR/blob/master/arduino/opencr_arduino/opencr/libraries/turtlebot3_ros2/src/turtlebot3/turtlebot3_motor_driver.cpp) 
+ta có : 
+
+    wheel_velocity[LEFT]   = (lin_vel - (ang_vel * wheel_separation / 2))  (1)
+    wheel_velocity[RIGHT]  = (lin_vel + (ang_vel * wheel_separation / 2))  (2)
+    
 ###  ⭐️  Linear.x
 
 Giá trị quay tối đa của động cơ sau hộp giảm số 
@@ -56,14 +64,19 @@ Vận tốc của từng bánh
 
     V = f * C = 1.666666 * 0.471 = 0.78499 m/s 
 
-Đặt
+Xét để giá trị trùng với Refer như trên 
 
-    Vận tốc bánh trái = left_vel
-    Vận tốc bánh phải = right_vel
+    Vận tốc bánh trái = wheel_velocity[LEFT]
+    Vận tốc bánh phải = wheel_velocity[RIGHT]
     
 Vận tốc tuyến tính khi động cơ di chuyển thằng theo chiều X sẽ là 
 
-    linear.x =  (left_vel+ right_vel )/2
+    linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
+
+Bằng cách cộng phương trình (1) và (2) theo Refer như trên ta cũng có kết quả tương tự như sau 
+
+    wheel_velocity[LEFT] + wheel_velocity[RIGHT] = 2 linear.x
+    linear.x = (wheel_velocity[LEFT] + wheel_velocity[RIGHT] ) / 2
     
 Tuy nhiên giá trị ta có đang ở dạng Analog (Max = 255 ) nên giá trị tỉ lệ là 
 

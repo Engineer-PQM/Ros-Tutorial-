@@ -92,11 +92,36 @@ Vì vận tốc góc được tính bằng Rad/s nên ta phải quy đổi 1 s�
 
 ![240779389_617990985833400_1602310391635025706_n](https://user-images.githubusercontent.com/82381342/131256905-b5aab0f6-99e4-4e83-9a84-b14f72fbb7b0.png)
 
-    w = 100 * 0.10472 = 10.472
+    w = 100 * 0.10472 = 10.472 Rad/s 
 
 Tuy nhiên đây là Tutorial nên mình sẽ giải thích vì sao 
 
     f = 1.666666 v/s (như trên)
     T = 1/f = 1/1.666666 = 0.600(s)
-    w = 2Pi/T = 6.24/0.60 = 10.4 Rad/s 
+    w = 2Pi/T = 6.24/0.60 = 10.4 Rad/s (*)
     
+Ta sẽ xét chuyển động tròn quay như sau 
+
+<img src="https://user-images.githubusercontent.com/82381342/131257367-6037536a-961b-4f6b-849c-6d437f5e0184.png" width="424" >
+
+Ta sẽ xét nhỏ từng bộ phận trong này như sau 
+
+![240824206_534087207816616_1448685790814860986_n](https://user-images.githubusercontent.com/82381342/131257605-fe62118a-45ed-444a-bda9-db358e7c6176.png)
+
+Nếu bánh xe di chuyển 1 khoảng = dx 
+
+    R = WHEEL_RADIUS = 0.075m  
+    dx = Rd0
+    
+Phương trình này phụ thuộc vào thời gian di chuyển của từng bánh do đó ta phải đạo hàm theo thời gian như sau 
+
+    (dx/dt) = R(d0/dt) (**)
+    
+Từ phương trình (*) và (**) ta có
+
+    dx/dt = V (Vận tốc góc ) Rad/s 
+    d0/dt = w = 10.4 Rad/s  (như trên )
+    
+Vận tốc góc sẽ là 
+
+    V = w * R = 10.472 *  0.075 = 0.7854 ( Rad/s )

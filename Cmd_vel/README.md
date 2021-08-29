@@ -132,7 +132,7 @@ Xét hệ tọa độ của Robot theo trục x ta có
 
 ![240877546_1219122535234448_4965050885662977196_n](https://user-images.githubusercontent.com/82381342/131258172-442515c4-5ca3-4642-825c-f577edbc9fb6.png)
 
-Tọa độ trục dương của robot luôn về phía bên trái và ngược lại nghĩa là nếu di chuyển về phía dương t 
+Tọa độ trục dương của robot luôn về phía bên trái và ngược lại  
 
     wheel_velocity[LEFT] < wheel_velocity[RIGHT]
     
@@ -141,7 +141,7 @@ nên mỗi khi quay ta có
 
     wheel_velocity[RIGHT] - wheel_velocity[LEFT] (3)
     
-Do phương trình (3) yêu cầu ta được phương trình (2) - phương trình (1) Theo Refer trên ta được 
+Do phương trình (3) là điều kiện nên ta được phương trình (2) - phương trình (1) 
 
     wheel_velocity[RIGHT] - wheel_velocity[LEFT]  = linear.x - linear.x + ((Angular.z * wheel_separation / 2) + (Angular.z * wheel_separation / 2))  
     wheel_velocity[RIGHT] - wheel_velocity[LEFT] = 2(Angular.z * wheel_separation / 2)

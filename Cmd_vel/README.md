@@ -34,8 +34,8 @@ Ta biết dạng của Topic /cmd_vel như sau
 
 Trong này chúng ta chỉ quan tâm tới 
 
-- Linear.x  `m/s`   ( Vận tốc tuyến tính )
-- Angular.z `Rad/s` ( Vận tốc góc ) 
+- Linear.x  `m/s`   ( Vận tốc tuyến tính = V1 )
+- Angular.z `Rad/s` ( Vận tốc góc = V2 )
 
 ## Algorithm
 
@@ -62,7 +62,7 @@ Chu Vi (C) với Pi ( ~ 3.14)
 
 Vận tốc của từng bánh 
 
-    V = f * C = 1.666666 * 0.471 = 0.78499 m/s 
+    v1 = f * C = 1.666666 * 0.471 = 0.78499 m/s 
 
 Xét để giá trị trùng với Refer như trên 
 
@@ -117,11 +117,25 @@ Phương trình này phụ thuộc vào thời gian di chuyển của từng bá
 
     (dx/dt) = R(d0/dt) (**)
     
-Từ phương trình (*) và (**) ta có
+Từ phương trình (*) và (**) ta có 
+[xem thêm](https://www.physicsforums.com/threads/deriving-the-formula-v-wr.776291/)
 
     dx/dt = V (Vận tốc góc ) Rad/s 
     d0/dt = w = 10.4 Rad/s  (như trên )
     
-Vận tốc góc sẽ là 
+Vận tốc góc của từng bánh sẽ là 
 
-    V = w * R = 10.472 *  0.075 = 0.7854 ( Rad/s )
+    V2 =  w * R = 10.472 *  0.075 = 0.7854 ( Rad/s )
+    
+Xét hệ tọa độ của Robot theo trục x ta có 
+
+![240877546_1219122535234448_4965050885662977196_n](https://user-images.githubusercontent.com/82381342/131258172-442515c4-5ca3-4642-825c-f577edbc9fb6.png)
+
+Tọa độ trục dương của robot luôn về phía bên trái và ngược lại nghĩa là nếu di chuyển về phía dương thì 
+
+    wheel_velocity[LEFT] < wheel_velocity[RIGHT]
+    
+Xét trục tọa độ đi từ X thì ta sẽ coi bánh bên trái là tâm ( giá trị luôn bằng 0 ) để làm được điều này ta phải trừ đi giá trị của bánh phải để cho cân bằng 
+nên mỗi khi quay ta có 
+
+    wheel_velocity[RIGHT] - wheel_velocity[LEFT]
